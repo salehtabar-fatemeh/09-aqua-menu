@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body *{
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        ul.main-menu{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        ul.main-menu ul{
+            list-style: none;
+            font-weight: normal;
+            padding: 0;
+            margin: 0;
+            position: absolute;
+            border: 2px solid blue;
+            border-radius: 15%;
+            display: none;
+        }
+        .main-menu>li{
+            display: inline-block;
+            border-radius: 20px;
+            text-decoration: none;
+        }
+        .main-menu>li:hover ul{
+            background-color: aqua;
+            display: block;
+            
+        }
+         .main-menu li:hover{
+            background-color: aqua;
+            border: 3px solid black;
+            border-radius: 30px;
+         }
+       
+    </style>
+</head>
+<body>
+
+        <ul class="main-menu">
+            <li class="main2"><a href="#">کاربردی</a>
+                <ul>
+                    <li><a href="#">بازیابی اطلاعات</a></li>
+                    <li><a href="#"> هارد و دیسک</a></li>
+                    <li><a href="#">دیسک بوت</a></li>
+                </ul>
+            </li>
+            <li><a href="#">امنیتی</a></li>
+            <li class="main1"><a href="#">اینترنت</a>
+                <ul>
+                    <li><a href="#">مرورگر وب</a></li>
+                    <li><a href="#">مدیریت</a></li>
+                    <li><a href="#">ایمیل</a></li>
+                </ul>
+            </li>
+            <li><a href="#">اداری و دفتری</a></li>
+            <li><a href="#">گرافیک</a></li>
+        </ul>  
+</body>
+</html>
